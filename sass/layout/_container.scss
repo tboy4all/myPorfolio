@@ -1,0 +1,15 @@
+.container {
+  // display: flex;
+  // height: 3.2rem;
+  padding: 0 3.2rem;
+
+  @include breakpoint-up('medium') {
+    padding: 0 4rem;
+  }
+
+  @include breakpoint-up('large') {
+    max-width: var(--space-max-width);
+    margin: 0 auto;
+    padding: 0;
+  }
+}

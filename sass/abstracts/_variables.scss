@@ -1,0 +1,23 @@
+:root {
+  /* C */
+  --color-cyan: #5fb4a2;
+  --color-red: #f43030;
+  --color-dark-blue: #203a4c;
+  --color-grayish-dark-blue: #33323d;
+  --color-very-light-gray: #fafafa;
+  --color-light-gray: #eaeaeb;
+  --color-white: #ffffff;
+  --color-border-gray: #dcdcde;
+  --color-form-input-bg: #e5e5e6;
+  --color-form-input-place-holder: #9d9da3;
+  --font-family-sans: 'Public Sans', sans-serif;
+  --font-family-serif: 'Ibarra Real Nova', serif;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-semiBold: 600;
+  --weight-bold: 700;
+  --space-max-width: 111rem;
+  --transition: 300ms ease-in-out;
+}
+// FONT
+$default-font-size: 1.6rem;

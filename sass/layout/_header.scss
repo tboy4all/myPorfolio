@@ -1,0 +1,55 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  margin-top: 3.2rem;
+  @include breakpoint-up('medium') {
+    margin-top: 6.4rem;
+  }
+
+  .main-nav {
+    position: relative;
+    color: var(--color-dark-blue);
+
+    @include breakpoint-up('medium') {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__brand {
+      height: 3.1rem;
+      .nav__logo {
+        width: 100%;
+      }
+    }
+    &__nav-items {
+      display: flex;
+      gap: 3rem;
+    }
+    &__nav-item {
+      font-weight: bold;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    &__link {
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      @include breakpoint-up('medium') {
+        color: var(--color-grayish-dark-blue);
+      }
+      &:hover {
+        color: var(--color-cyan);
+      }
+    }
+    &__link--active {
+      color: var(--color-cyan);
+    }
+  }
+}
