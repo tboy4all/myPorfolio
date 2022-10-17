@@ -19,7 +19,6 @@
 
     <!-- style .css -->
     <link rel="stylesheet" href="assets/stylesheets/style.css" />
-    <link rel="stylesheet" href="./sass/pages/contact.css" />
 
     <title>Porfolio</title>
   </head>
@@ -75,17 +74,16 @@
     </header>
     <!-- End of header page-->
 
-    <!-- main page -->
-
-    <main id="swup" class="main main--home transition-fade">
+    <!-- main page starts here -->
+    <main id="swup" class="main main--contact transition-fade">
       <div class="container">
         <section class="get-in-touch">
           <div class="get-in-touch__heading">
             <h2 class="t-h2">Get in Touch</h2>
           </div>
           <div class="get-in-touch__body">
-            <div class="get-in-touch__boby__content">
-              <p class="t-body1 t-opacity8">
+            <div class="get-in-touch__body__contents">
+              <p class="get-in-touch__body-text">
                 I’d love to hear about what you’re working on and how I could
                 help. I’m currently looking for a new role and am open to a wide
                 range of opportunities. I’m a hard-working and positive person
@@ -94,11 +92,11 @@
                 profiles below and get in touch using the form.
               </p>
               <ul class="page-socials">
-                <li class="page-socials__social">
-                  <a href="https://github.com/shina1" target="_blank">
+                <li class="page-socials__list">
+                  <a href="https://github.com/tboy4all" target="_blank">
                     <span class="screen-reader-only">Github</span>
                     <svg
-                      class="page-socials__social__icon"
+                      class="page-social__icon"
                       xmlns="http://www.w3.org/2000/svg"
                       width="25"
                       height="24"
@@ -110,11 +108,11 @@
                     </svg>
                   </a>
                 </li>
-                <li class="page-socials__social">
-                  <a href="https://twitter.com/@localJSdev" target="_blank">
+                <li class="page-socials__list">
+                  <a href="https://twitter.com/@devtaiye" target="_blank">
                     <span class="screen-reader-only">Twitter</span>
                     <svg
-                      class="page-socials__social__icon"
+                      class="page-social__icon"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="20"
@@ -126,14 +124,14 @@
                     </svg>
                   </a>
                 </li>
-                <li class="page-socials__social">
+                <li class="page-socials__list">
                   <a
-                    href="https://www.linkedin.com/in/wasiu-shina-ab8050b5"
+                    href="https://www.linkedin.com/in/devtaiye"
                     target="_blank"
                   >
                     <span class="screen-reader-only">LinkedIn</span>
                     <svg
-                      class="page-socials__social__icon"
+                      class="page-social__icon"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -150,14 +148,10 @@
           </div>
         </section>
         <section class="contact">
-          <h2 class="t-h2">Contact Me</h2>
+          <h2 class="contact__title">Contact Me</h2>
           <form id="contact-form" action="" method="post" class="contact-form">
             <div class="contact-form__input-group">
-              <label
-                class="t-bold t-opacity8 t-form-label form-label"
-                for="name"
-                >Name</label
-              >
+              <label class="form-label" for="name">Name</label>
               <input
                 class="contact-form__input-field"
                 type="text"
@@ -168,11 +162,7 @@
               <p class="error hide">This field is required</p>
             </div>
             <div class="contact-form__input-group">
-              <label
-                class="t-bold t-opacity8 t-form-label form-label"
-                for="email"
-                >Email Address</label
-              >
+              <label class="form-label" for="email">Email Address</label>
               <input
                 class="contact-form__input-field"
                 type="email"
@@ -183,9 +173,7 @@
               <p class="error hide">This field is required</p>
             </div>
             <div class="contact-form__input-group">
-              <label
-                class="t-bold t-opacity8 t-form-label form-label"
-                for="message"
+              <label class="t-bold t-opacity8 form-label" for="message"
                 >Message</label
               >
               <textarea

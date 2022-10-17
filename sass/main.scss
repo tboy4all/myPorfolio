@@ -5,10 +5,8 @@
 @import 'base/base';
 @import 'base/transition';
 @import 'base/typography';
-@import 'base/utilities';
 
 @import 'components/button';
-@import 'components/composition';
 @import 'components/form';
 
 @import 'layout/container';
@@ -16,3 +14,10 @@
 @import 'layout/header';
 
 @import 'pages/home';
+@import 'pages/contact';
+
+// @use 'abstracts';
+// @use 'base';
+// @use 'components';
+// @use 'layout';
+// @use 'pages';
