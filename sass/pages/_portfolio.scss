@@ -1,0 +1,204 @@
+.main--portfolio {
+  @include breakpoint-up('medium') {
+    margin-top: 20rem;
+    // background-color: green;
+  }
+
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include breakpoint-up('large') {
+      justify-content: normal;
+    }
+
+    &--left {
+      flex-direction: column;
+
+      @include breakpoint-up('medium') {
+        flex-direction: row;
+      }
+    }
+
+    &--right {
+      flex-direction: column;
+
+      @include breakpoint-up('medium') {
+        flex-direction: row-reverse;
+      }
+    }
+    &__image {
+      height: 28.8rem;
+      width: 100%;
+      max-width: 50rem;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include breakpoint-up('medium') {
+        margin: 0;
+        max-width: none;
+        width: 33.9rem;
+        height: 31.4rem;
+      }
+
+      @include breakpoint-up('large') {
+        width: 54rem;
+        height: 50rem;
+      }
+
+      &--landing {
+        background-image: url(../../assets/images/portfolio/desktop/image-portfolio-manage@2x.jpg);
+
+        @include breakpoint-up('medium') {
+          background-position-x: right;
+          background-image: url(../../assets/images/portfolio/desktop/image-portfolio-manage@2x.jpg);
+        }
+
+        @include breakpoint-up('large') {
+          background-image: url(../../assets/images/portfolio/desktop/image-portfolio-manage@2x.jpg);
+        }
+      }
+
+      &--bookmark {
+        background-image: url(../../assets/images/portfolio/desktop/image-porfolio-calculator.jpg);
+
+        @include breakpoint-up('medium') {
+          //   background-position-x: right;
+          background-position: center;
+          background-size: 50vw;
+          background-image: url(../../assets/images/portfolio/desktop/image-porfolio-calculator.jpg);
+        }
+
+        @include breakpoint-up('large') {
+          background-image: url(../../assets/images/portfolio/desktop/image-porfolio-calculator.jpg);
+        }
+      }
+
+      &--pantha {
+        background-image: url(../../assets/images/portfolio/desktop/image-portfolio-e-commerce@2x.jpg);
+
+        @include breakpoint-up('medium') {
+          //   background-position-x: right;
+          background-image: url(../../assets/images/portfolio/desktop/image-portfolio-e-commerce@2x.jpg);
+          background-position: center;
+          //   background-repeat: no-repeat;
+          background-size: 50vw;
+        }
+
+        @include breakpoint-up('large') {
+          background-image: url(../../assets/images/portfolio/desktop/image-portfolio-e-commerce@2x.jpg);
+        }
+      }
+      &--yimags {
+        background-image: url(../../assets/images/portfolio/desktop/image-portfolio-insure.jpg);
+
+        @include breakpoint-up('medium') {
+          background-position-x: right;
+          background-image: url(../../assets/images/portfolio/desktop/image-portfolio-insure.jpg);
+        }
+
+        @include breakpoint-up('large') {
+          background-image: url(../../assets/images/portfolio/desktop/image-portfolio-insure.jpg);
+        }
+      }
+    }
+    &__introduction {
+      border-top: 1px solid var(--color-border-gray);
+      border-bottom: 1px solid var(--color-border-gray);
+      margin: 3.2rem auto 0;
+      max-width: 50rem;
+      min-height: 33.4rem;
+      padding: 2.4rem 0;
+
+      @include breakpoint-down('small') {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      @include breakpoint-up('medium') {
+        max-width: 28.1rem;
+        min-height: 33.4rem;
+        padding: 3.2rem 0 5rem;
+        margin: 0;
+      }
+
+      @include breakpoint-up('large') {
+        padding: 10.4rem 0;
+        max-width: 35rem;
+        max-height: 50rem;
+      }
+
+      &__introduction__body {
+        opacity: 0.8;
+        margin-top: 2.4rem;
+        margin-bottom: 2.4rem;
+
+        @include breakpoint-up('medium') {
+          margin-top: 2.9rem;
+          margin-bottom: 3.5rem;
+        }
+
+        @include breakpoint-up('large') {
+          margin-top: 2.8rem;
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
+    .intro-ml {
+      margin-left: auto;
+
+      @include breakpoint-up('medium') {
+        margin-left: 6.9rem;
+      }
+
+      @include breakpoint-up('large') {
+        margin-left: 12.5rem;
+      }
+    }
+
+    .intro-mr {
+      margin-right: auto;
+
+      @include breakpoint-up('medium') {
+        margin-right: 6.9rem;
+      }
+      @include breakpoint-up('large') {
+        margin-right: 12.5rem;
+      }
+    }
+
+    &-mb {
+      margin-bottom: 7.2rem;
+
+      @include breakpoint-up('medium') {
+        margin-bottom: 8rem;
+      }
+    }
+    .t-h2 {
+      font-size: 4rem;
+      line-height: 4.2rem;
+      letter-spacing: -0.36px;
+      font-weight: var(--weight-bold);
+      font-family: var(--font-family-serif);
+    }
+
+    .t-body1 {
+      font-size: 1.6rem;
+      line-height: 3.5rem;
+      letter-spacing: 0;
+      font-weight: var(--weight-regular);
+      font-family: var(--font-family-sans);
+      margin-top: 2.5rem;
+
+      &--project-intro {
+        @include breakpoint-down('medium') {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
