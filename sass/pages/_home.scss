@@ -83,7 +83,10 @@
   }
 
   &__button {
+    display: flex;
+    align-items: center;
     margin-top: 3.2rem;
+    height: 4.8rem;
 
     @include breakpoint-up('medium') {
       margin-top: 4.8rem;
@@ -120,6 +123,7 @@
     background-size: cover;
     background-position: center;
     height: 34.6rem;
+    width: 40rem;
     margin-bottom: 3.2rem;
 
     @include breakpoint-up('medium') {
@@ -137,6 +141,15 @@
     border-top: 1px solid var(--color-border-gray);
     border-bottom: 1px solid var(--color-border-gray);
     padding: 3.2rem 0 5.1rem 0;
+
+    @include breakpoint-up('medium') {
+      width: 49.202%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
 
     @include breakpoint-up('large') {
       width: 34.65rem;

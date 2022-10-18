@@ -1,0 +1,15 @@
+.main-nav__burger-menu {
+  cursor: pointer;
+  display: flex;
+  // gap: 3rem;
+  margin-top: -1.5rem;
+  // align-items: center;
+  justify-content: flex-end;
+  @include breakpoint-up('medium') {
+    display: none;
+  }
+  #burger-icon.hide,
+  #close-icon.hide {
+    display: none;
+  }
+}
