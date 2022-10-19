@@ -21,11 +21,16 @@
     <link rel="stylesheet" href="assets/stylesheets/style.css" />
 
     <title>Porfolio</title>
+
+    <!-- Js Script -->
+    <script defer src="./assets/js/swup.min.js"></script>
+    <script defer src="./assets/js/app.js"></script>
+    <script src="./assets/js/nav.jss"></script>
   </head>
 
   <body>
     <!-- header page -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <nav class="main-nav">
           <!-- logo -->
@@ -38,6 +43,35 @@
               />
             </a>
           </div>
+          <!-- End of logo -->
+
+          <!-- Hamburger -->
+          <div class="main-nav__burger-menu" id="burger">
+            <svg
+              id="burger-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="13"
+            >
+              <g fill="#33323D" fill-rule="evenodd">
+                <path d="M0 0h24v1H0zM0 6h24v1H0zM0 12h24v1H0z" />
+              </g>
+            </svg>
+            <svg
+              id="close-icon"
+              class="hide"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="19"
+            >
+              <path
+                fill="#33323D"
+                fill-rule="evenodd"
+                d="M17.132.661l.707.707L9.707 9.5l8.132 8.132-.707.707L9 10.207.868 18.34l-.707-.707L8.293 9.5.161 1.368.868.661 9 8.793 17.132.661z"
+              />
+            </svg>
+          </div>
+          <!-- end of Hamburger -->
 
           <ul class="main-nav__nav-items">
             <li class="main-nav__nav-item">
@@ -56,19 +90,18 @@
           </ul>
 
           <!-- Mobile Nav -->
-          <!-- <ul class="mobile-nav__nav-items hide" id="mobile-nav">
+          <ul class="mobile-nav__nav-items hide" id="mobile-nav">
             <li class="mobile-nav__nav-item">
-              <a class="t-nav-link t-white" href="./index.html">Home</a>
+              <a class="t-nav-link" href="./index.html">Home</a>
             </li>
             <li class="mobile-nav__nav-item">
-              <a class="t-nav-link t-white" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="t-nav-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="mobile-nav__nav-item">
-              <a class="t-nav-link t-white" href="./contact.html">Contact Me</a>
+              <a class="t-nav-link" href="./contact.html">Contact Me</a>
             </li>
-          </ul> -->
+          </ul>
+          <!-- End of Mobile nav -->
         </nav>
       </div>
     </header>
@@ -82,7 +115,7 @@
           <div class="home-intro__image"></div>
           <div class="home-intro__content">
             <h1 class="t-h1">
-              Hi, I’m TAIYE and I love building beautiful websites
+              Hi, I'm TAIYE and I love building beautiful websites
             </h1>
             <a
               id="aboutme"
@@ -117,14 +150,14 @@
           <div class="home-about__content">
             <h2 class="home-about__content__heading">About Me</h2>
             <p class="home-about__description">
-              I’m an intermediate full-stack developer looking for a new role in
+              I'm an intermediate full-stack developer looking for a new role in
               an exciting company. I focus on writing accessible HTML, using
               modern CSS practices,clean JavaScript, Nodejs.I can easily adapt
-              to whatever tools are required. I’m based in Ilorin, Nigeria,I am
+              to whatever tools are required. I'm based in Ilorin, Nigeria,I am
               open to relocation and also have experience in remote teams. When
-              I’m not coding, you’ll find me outdoors playing chess or video
-              games.I also love being out in nature whether that’s going for a
-              walk, run or cycling. I’d love you to check out my work.
+              I'm not coding, you'll find me outdoors playing chess or video
+              games.I also love being out in nature whether that's going for a
+              walk, run or cycling. I'd love you to check out my work.
             </p>
             <a
               class="btn btn--secondary home-about__button"
@@ -225,5 +258,14 @@
       </div>
     </footer>
     <!-- End of footer -->
+
+    <script>
+      // only used in homepage
+      const aboutme = document.getElementById('aboutme')
+      const aboutmesec = document.getElementById('aboutmesec')
+      aboutme.onclick = () => {
+        aboutmesec.scrollIntoView({ behavior: 'smooth' })
+      }
+    </script>
   </body>
 </html>
